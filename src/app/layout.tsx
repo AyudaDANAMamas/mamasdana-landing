@@ -28,9 +28,9 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+            className={`${geistSans.variable} ${geistMono.variable} font-sans text-gray-900 antialiased`}
         >
-        <div className="flex flex-col min-h-screen bg-[#FDF8F7]">
+        <div className="flex flex-col min-h-screen">
             <header className="px-4 lg:px-6 h-20 flex items-center border-b border-[#F5C4C0]/20">
                 <Link className="flex items-center justify-center gap-2" href="/">
                     <Image src="/logo.svg" width={60} height={60} alt="Logo"/>
@@ -38,21 +38,18 @@ export default function RootLayout({
                 </Link>
             </header>
             <main className="flex-1">
-                <section
-                    className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-[#B7E4E7]/20 to-transparent">
-                    {children}
-                </section>
+                {children}
             </main>
             <footer
                 className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-[#F5C4C0]/20">
                 <p className="text-xs text-[#1B365D]/60">© 2024 Mamás DANA. Todos los derechos reservados.</p>
                 <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-                    <Link className="text-xs text-[#1B365D]/60 hover:underline underline-offset-4" href="#">
+                    <Link className="text-xs hover:underline underline-offset-4" href="#">
                         Términos de Servicio
                     </Link>
-                    <Link className="text-xs text-[#1B365D]/60 hover:underline underline-offset-4"
+                    <Link className="text-xs hover:underline underline-offset-4"
                           href="/politica-de-privacidad">
-                        Privacidad
+                        Política de privacidad
                     </Link>
                 </nav>
             </footer>
