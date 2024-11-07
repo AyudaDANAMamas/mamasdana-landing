@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const specialties = [
@@ -36,6 +37,25 @@ export default function Home() {
       label: "Doula",
     },
   ];
+
+  const termsAndConditions = [
+    {
+      label: "Aviso Legal",
+      url: "aviso-legal"
+    },
+    {
+      label: "Política de Privacidad",
+      url: "privacidad"
+    },
+    {
+      label: "Política de Cookies",
+      url: "cookies"
+    },
+    {
+      label: "Política Redes Sociales",
+      url: "redes-sociales"
+    }
+  ]
 
   return (
     <main>
@@ -336,18 +356,16 @@ export default function Home() {
 
           {/* Links - Full width and stacked on mobile */}
           <div className="text-white text-sm flex flex-col md:flex-row gap-2 md:gap-4 order-3 md:flex-1 md:justify-end">
-            <Button
-              variant="link"
-              className="text-white hover:text-white/80 underline"
-            >
-              Términos de servicio
-            </Button>
-            <Button
-              variant="link"
-              className="text-white hover:text-white/80 underline"
-            >
-              Política de privacidad
-            </Button>
+            {termsAndConditions.map((term) => (
+              <Link key={term.label} href={term.url}>
+                <Button
+                  variant="link"
+                  className="text-white hover:text-white/80 underline"
+                >
+                  {term.label}
+                </Button>
+              </Link>
+            ))}
           </div>
         </div>
       </footer>
