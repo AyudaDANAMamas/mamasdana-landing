@@ -75,10 +75,20 @@ body {
   @apply mx-auto w-full;
 }
 
-@media (min-width: 1400px){
-  .container{max-width:1400px}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
 }
 
 .font-sans {
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@font-face {
+  font-family: "Raleway-Thin";
+  src: url("/fonts/Raleway-Thin.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }

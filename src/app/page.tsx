@@ -82,7 +82,7 @@ export default function Home() {
             Un espacio que conecta a mamás DANA con profesionales de la salud
             materno-infantil. Todo dentro de una comunidad acogedora y segura.
           </h1>
-          <h2 className="text-center text-base sm:text-lg md:text-xl mb-4">
+          <h2 className="text-center text-base sm:text-lg md:text-xl mb-4 font-sans">
             Psicólogas perinatales, pediatras, matronas, asesoras de lactancia y
             otras especialistas atendiendo a las madres y sus bebés en la crisis
             DANA a través de consultas online gratuitas 24h.
@@ -106,7 +106,7 @@ export default function Home() {
             El desafío de la accesibilidad a servicios de salud para las
             embarazadas, madres y bebés en situaciones de emergencia.
           </h2>
-          <p className="text-center">
+          <p className="text-center font-sans">
             La reciente inundación del DANA ha afectado profundamente a muchas
             mujeres embarazadas, madres y sus bebés, dejándolas sin acceso a
             servicios de salud esenciales. Por eso hemos creado este espacio en
@@ -152,7 +152,7 @@ export default function Home() {
             <h2 className="text-center text-4xl text-barro">
               Beneficios de este espacio
             </h2>
-            <p className="text-center">
+            <p className="text-center font-sans">
               Ponemos en contacto a mamás y bebés con especialistas en salud de
               manera rápida y sencilla, sin complicaciones.
             </p>
