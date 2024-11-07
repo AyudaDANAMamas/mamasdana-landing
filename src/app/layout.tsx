@@ -45,11 +45,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="es">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans text-gray-900 antialiased`}
-      >
+    return (
+        <html lang="es">
+        <body
+            className={`${geistSans.variable} ${geistMono.variable} font-raleway-thin text-gray-900 antialiased`}
+        >
         <div className="flex flex-col min-h-screen">
           {/*<header className="px-4 lg:px-6 h-20 flex items-center border-b border-[#F5C4C0]/20">*/}
           {/*    <Link className="flex items-center justify-center gap-2" href="/">*/}

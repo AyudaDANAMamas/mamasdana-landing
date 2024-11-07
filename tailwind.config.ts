@@ -55,6 +55,9 @@ const config: Config = {
                 'calma': '#F9F3ED',
                 'florecer': '#7E7258'
             },
+            fontFamily: {
+                'raleway-thin': ['Raleway-Thin'],
+            },
             borderRadius: {
                 lg: 'var(--radius)',
                 md: 'calc(var(--radius) - 2px)',
