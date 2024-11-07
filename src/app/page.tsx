@@ -9,7 +9,7 @@ export default function Home() {
       label: "Psicólogia infantil",
     },
     {
-      label: "Matronas & Ginecología",
+      label: "Matronas y Ginecología",
     },
     {
       label: "Enfermería pediátrica",
@@ -21,7 +21,7 @@ export default function Home() {
       label: "Logopedia neonatal",
     },
     {
-      label: "Fisioterapia pediátrica & respiratoria",
+      label: "Fisioterapia pediátrica y respiratoria",
     },
     {
       label: "Pediatría",
@@ -75,7 +75,7 @@ export default function Home() {
               SOY PROFESIONAL VOLUNTARIO
             </Button>
             <Button className="bg-refugio hover:bg-refugio text-white rounded-full whitespace-normal sm:whitespace-nowrap text-sm sm:text-base">
-              Soy mamá dana
+              Soy mamá DANA
             </Button>
           </div>
         </div>

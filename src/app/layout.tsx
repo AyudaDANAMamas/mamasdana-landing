@@ -1,20 +1,8 @@
 import { Button } from '@/components/ui/button';
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
 import Image from 'next/image';
 import Link from 'next/link';
 import './globals.css';
-
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900'
-});
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900'
-});
 
 const termsAndConditions = [
   {
@@ -45,11 +33,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-    return (
-        <html lang="es">
-        <body
-            className={`${geistSans.variable} ${geistMono.variable} font-raleway-thin text-gray-900 antialiased`}
-        >
+  return (
+    <html lang="es">
+      <body className={`font-raleway-thin text-gray-900 antialiased`}>
         <div className="flex flex-col min-h-screen">
           {/*<header className="px-4 lg:px-6 h-20 flex items-center border-b border-[#F5C4C0]/20">*/}
           {/*    <Link className="flex items-center justify-center gap-2" href="/">*/}
