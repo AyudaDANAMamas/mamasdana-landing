@@ -47,7 +47,13 @@ const config: Config = {
                     '3': 'hsl(var(--chart-3))',
                     '4': 'hsl(var(--chart-4))',
                     '5': 'hsl(var(--chart-5))'
-                }
+                },
+                'esperanza': '#D3B77F',
+                'refugio': '#C9784F',
+                'barro': '#995E39',
+                'neutro': '#EFE7DA',
+                'calma': '#F9F3ED',
+                'florecer': '#7E7258'
             },
             borderRadius: {
                 lg: 'var(--radius)',
