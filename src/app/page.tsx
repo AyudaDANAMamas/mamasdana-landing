@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
-  const especialities = [
+  const specialties = [
     {
       label: "Psicólogia infantil",
     },
@@ -32,6 +32,9 @@ export default function Home() {
     {
       label: "Fisioterapia de suelo pélvico",
     },
+    {
+      label: "Doula",
+    },
   ];
 
   return (
@@ -39,7 +42,7 @@ export default function Home() {
       <section
         className="flex items-center justify-center backdrop-brightness-50 mx-auto w-full min-h-[100vh] bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: "url('/image.png')",
+          backgroundImage: "url('/banner-principal-flor-tierra.jpg')",
         }}
       >
         {/* Logo container - positioned at top */}
@@ -110,7 +113,7 @@ export default function Home() {
               Especialidades médicas a tu disposición
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 w-full max-w-6xl mx-auto">
-              {especialities.map((especiality) => (
+              {specialties.map((especiality) => (
                 <div
                   key={especiality.label}
                   className="bg-calma hover:bg-calma rounded-full text-black p-3 flex justify-center items-center text-center"
