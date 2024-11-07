@@ -6,19 +6,12 @@ export default function TermsPrivacy() {
     <div className="min-h-screen flex flex-col">
       <header className="bg-barro text-white py-4">
         <div className="container mx-auto px-4">
-          <h1 className="text-2xl font-bold">Política de Privacidad</h1>
+          <h1 className="text-2xl font-bold">Política de Privacidad - MamásDana</h1>
         </div>
       </header>
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="space-y-4">
-          <p>
-            <strong>Política de Privacidad</strong>
-          </p>
-
-          <p>
-            <strong>MamásDANA</strong>
-          </p>
           <p>
             De acuerdo con la Ley Orgánica 3/2018 LOPD-GDD y con el Reglamento
             Europeo RGPD de Protección de Datos personales, hemos actualizado
@@ -203,7 +196,7 @@ export default function TermsPrivacy() {
             <strong>¿Con qué finalidad tratamos tus datos personales?</strong>
           </p>
           <p>
-            <br /> Sus datos personales sólo se utilizarán para las siguientes
+            Sus datos personales sólo se utilizarán para las siguientes
             finalidades:
           </p>
 
@@ -345,7 +338,6 @@ export default function TermsPrivacy() {
           </p>
 
           <p>
-            <br />
             <strong>¿ Por cuánto tiempo conservaremos tus datos?</strong>
           </p>
 

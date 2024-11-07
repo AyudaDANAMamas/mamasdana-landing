@@ -6,15 +6,12 @@ export default function TermsLegal() {
     <div className="min-h-screen flex flex-col">
       <header className="bg-barro text-white py-4">
         <div className="container mx-auto px-4">
-          <h1 className="text-2xl font-bold">Aviso Legal</h1>
+          <h1 className="text-2xl font-bold">Aviso Legal - MamásDANA</h1>
         </div>
       </header>
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="space-y-4">
-          <p>
-            <b>MamásDANA</b>
-          </p>
           <p>
             El uso de este sitio web, www.mamasdana.es, implica la aceptación de
             estos términos. Si no está de acuerdo con ellos, le rogamos que no
