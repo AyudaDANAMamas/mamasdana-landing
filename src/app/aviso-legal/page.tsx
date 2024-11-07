@@ -39,7 +39,7 @@ export default function TermsLegal() {
               <i>Responsable del tratamiento de tus datos personales</i>
             </b>
           </p>
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>
               <b>Identidad del Responsable</b>: MamásDANA
             </li>
@@ -58,7 +58,7 @@ export default function TermsLegal() {
               <i>Identificación Delegado Protección de Datos</i>
             </b>
           </p>
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>
               <b>Delegado Protección Datos</b>: Francisco Burgos Rubiales
             </li>
@@ -76,7 +76,7 @@ export default function TermsLegal() {
             MamásDANA está constituida en relación a la protección de datos de
             acuerdo con los requisitos de la legislación vigente:
           </p>
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>
               Normativa Europea RGPD 2016/679 respecto al tratamiento de Datos
               Personales.
@@ -261,7 +261,7 @@ export default function TermsLegal() {
             en el uso correcto del sitio web. Esta responsabilidad se extenderá
             a:
           </p>
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>
               La veracidad y licitud de las informaciones aportadas por el
               usuario en los formularios extendidos por MamásDANA para el acceso

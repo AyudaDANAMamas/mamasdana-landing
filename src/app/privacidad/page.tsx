@@ -44,7 +44,7 @@ export default function TermsPrivacy() {
             </strong>
           </p>
 
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>
               <strong>Identidad del Responsable</strong>: MamásDANA
             </li>
@@ -63,7 +63,7 @@ export default function TermsPrivacy() {
             <strong>Identificación Delegado Protección de Datos </strong>
           </p>
 
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>
               <strong>Delegado Protección Datos</strong>: Francisco Burgos
               Rubiales
@@ -137,7 +137,7 @@ export default function TermsPrivacy() {
 
           <p>Los datos personales que tratamos proceden de:</p>
 
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>Formulario de contacto</li>
             <li>Teléfono</li>
             <li>Entrevistas</li>
@@ -200,7 +200,7 @@ export default function TermsPrivacy() {
             finalidades:
           </p>
 
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>
               Realizar las gestiones comerciales y administrativas necesarias
               con los usuarios de la web.

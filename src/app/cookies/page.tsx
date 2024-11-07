@@ -1,13 +1,13 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
-export default function TermsPrivacy() {
+export default function TermsCookies() {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="bg-barro text-white py-4">
         <div className="container mx-auto px-4">
           <h1 className="text-2xl font-bold">
-            Política de Privacidad - MamásDANA
+            Política de Cookies - MamásDANA
           </h1>
         </div>
       </header>
@@ -72,14 +72,14 @@ export default function TermsPrivacy() {
             las páginas, por lo que no hay que volver a configurar cada vez que
             la visitas. A modo de ejemplo, en esta tipología se incluyen:
           </p>
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>Ajustes de volumen de reproductores de vídeo o sonido.</li>
             <li>
               Las velocidades de transmisión de vídeo compatibles con su
               navegador.
             </li>
           </ul>
-          
+
           <p>
             <strong>Cookies de Geolocalización</strong>: Estas cookies son
             utilizadas para averiguar en qué país te encuentras cuando se navega
@@ -92,7 +92,7 @@ export default function TermsPrivacy() {
             comenzó la sesión, y se utilizan para identificarlo en las páginas
             con los siguientes objetivos:
           </p>
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>
               Mantener el usuario identificado de manera que, si cierra una
               página, el navegador o el ordenador y en otro momento u otro día
@@ -118,7 +118,7 @@ export default function TermsPrivacy() {
               preferencias en la red social que específica.
             </li>
           </ul>
-          
+
           <p>
             <strong>Cookies de Analíticas: </strong>Cada vez que un usuario
             visita una página, una herramienta de un proveedor externo (en
@@ -128,7 +128,7 @@ export default function TermsPrivacy() {
             identificar de forma anónima al visitante. Los objetivos principales
             que se persiguen son:
           </p>
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>
               Permitir la identificación anónima de los usuarios navegantes a
               través de la &quot;cookie&quot; (identifica navegadores y
@@ -143,7 +143,7 @@ export default function TermsPrivacy() {
               Saber si el usuario que está accediendo es nuevo o repite visita.
             </li>
           </ul>
-          
+
           <p>
             <strong>Importante: </strong>A menos que el usuario decida
             registrarse en la web de www.mamasdana.es, la &quot;cookie&quot;
@@ -152,7 +152,7 @@ export default function TermsPrivacy() {
             estadísticos que ayuden a la optimización de la experiencia de los
             usuarios en el sitio.
           </p>
-          
+
           <p>
             <strong>Otras cookies de terceros</strong>
           </p>
@@ -162,17 +162,17 @@ export default function TermsPrivacy() {
             ofrecen. Un ejemplo de este uso son los enlaces a las redes sociales
             que permiten compartir nuestros contenidos.
           </p>
-          
+
           <p>
             <strong>¿Cómo puedo configurar mis preferencias?</strong>
           </p>
           <p>
-            Puede permitir, bloquear o eliminar las cookies instaladas en
-            su equipo mediante la configuración de las opciones de su navegador
-            de internet. En el caso en que las bloquee, es posible que ciertos
+            Puede permitir, bloquear o eliminar las cookies instaladas en su
+            equipo mediante la configuración de las opciones de su navegador de
+            internet. En el caso en que las bloquee, es posible que ciertos
             servicios que necesitan su uso no estén disponibles para usted.
           </p>
-          
+
           <p>
             <strong>Utilización de Cookies</strong>
           </p>
@@ -220,12 +220,12 @@ export default function TermsPrivacy() {
             procede, de la navegación privada en cada uno de los navegadores
             principales:
           </p>
-          <ul>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>
               Internet Explorer: Herramientas -&gt; Opciones de Internet -&gt;
               Privacidad -&gt; Configuración.
             </li>
-            <ul>
+            <ul style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
               <li>
                 Para más información, puede consultar el apoyo de Microsoft o la
                 Ayuda del navegador.
@@ -235,7 +235,7 @@ export default function TermsPrivacy() {
               Firefox: Herramientas -&gt; Opciones -&gt; Privacidad -&gt;
               Histórico -&gt; Configuración Personalizada.
             </li>
-            <ul>
+            <ul style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
               <li>
                 Para más información, puede consultar el apoyo de Mozilla o la
                 Ayuda del navegador.
@@ -245,22 +245,21 @@ export default function TermsPrivacy() {
               Chrome: Configuración -&gt; Mostrar opciones avanzadas -&gt;
               Privacidad -&gt; Configuración de contenido.
             </li>
-            <ul>
+            <ul style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
               <li>
                 Para más información, puede consultar el apoyo de Google o la
                 Ayuda del navegador.
               </li>
             </ul>
             <li>Safari: Preferencias -&gt; Seguridad.</li>
-            <ul>
+            <ul style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
               <li>
                 Para más información, puede consultar el apoyo de Apple o la
                 Ayuda del navegador<strong>.</strong>
               </li>
             </ul>
           </ul>
-          
-          
+
           <p>
             <strong>Qué pasa si se desactivan las cookies</strong>
           </p>
