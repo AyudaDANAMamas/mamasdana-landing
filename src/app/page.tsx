@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   const specialties = [
@@ -37,25 +36,6 @@ export default function Home() {
       label: "Doula",
     },
   ];
-
-  const termsAndConditions = [
-    {
-      label: "Aviso Legal",
-      url: "aviso-legal"
-    },
-    {
-      label: "Política de Privacidad",
-      url: "privacidad"
-    },
-    {
-      label: "Política de Cookies",
-      url: "cookies"
-    },
-    {
-      label: "Política Redes Sociales",
-      url: "redes-sociales"
-    }
-  ]
 
   return (
     <main>
@@ -335,40 +315,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className="bg-barro p-6 md:p-10">
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-4">
-          {/* Copyright - Full width on mobile */}
-          <p className="text-white text-center text-sm order-2 md:order-1 md:flex-1">
-            © 2024 Mamás DANA. Todos los derechos reservados.
-          </p>
-
-          {/* Logo - Centered on both mobile and desktop */}
-          <div className="order-1 md:order-2">
-            <Image
-              src="/sello-isotipo-sinfondo-calma.svg"
-              alt="Flores florecer"
-              width={100}
-              height={1}
-              className="object-contain"
-              priority
-            />
-          </div>
-
-          {/* Links - Full width and stacked on mobile */}
-          <div className="text-white text-sm flex flex-col md:flex-row gap-2 md:gap-4 order-3 md:flex-1 md:justify-end">
-            {termsAndConditions.map((term) => (
-              <Link key={term.label} href={term.url}>
-                <Button
-                  variant="link"
-                  className="text-white hover:text-white/80 underline"
-                >
-                  {term.label}
-                </Button>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
