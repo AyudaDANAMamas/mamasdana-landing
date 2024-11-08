@@ -77,7 +77,7 @@ export default function Home() {
             <Button className="bg-refugio hover:bg-esperanza text-white rounded-full whitespace-normal sm:whitespace-nowrap text-sm sm:text-base">
               SOY MAMÁ DANA
             </Button>
-          </div>
+          </div>i
         </div>
       </section>
       <section className="w-full bg-white">
@@ -110,7 +110,7 @@ export default function Home() {
 
           <div className="bg-neutro w-full py-10 md:py-20 px-4">
             <h2 className="text-center text-4xl text-barro mb-10">
-              <span className="italic">Especialidades</span> médicas a tu disposición
+              <span className="italic font-semibold">Especialidades</span> médicas a tu disposición
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 w-full max-w-6xl mx-auto">
               {specialties.map((especiality) => (
@@ -130,7 +130,7 @@ export default function Home() {
         <div className="container mx-auto py-10 md:py-20">
           <div className="w-full px-4 md:w-2/4 mx-auto flex flex-col justify-center items-center gap-4 mb-12">
             <h2 className="text-center text-4xl text-barro">
-            <span className="italic">Beneficios</span> de este espacio
+            <span className="italic font-semibold">Beneficios</span> de este espacio
             </h2>
             <p className="text-center font-sans">
               Ponemos en contacto a mamás y bebés con especialistas en salud de
