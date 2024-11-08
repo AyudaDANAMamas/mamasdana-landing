@@ -6,7 +6,7 @@ export default function TermsPrivacy() {
     <div className="min-h-screen flex flex-col">
       <header className="bg-barro text-white py-4">
         <div className="container mx-auto px-4">
-          <h1 className="text-2xl font-bold">Política de Privacidad - MamásDana</h1>
+          <h1 className="text-2xl font-bold">Política de Privacidad - MamásDANA</h1>
         </div>
       </header>
 
