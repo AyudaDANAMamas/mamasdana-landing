@@ -77,11 +77,11 @@ export default function Home() {
             <Button className="bg-refugio hover:bg-esperanza text-white rounded-full whitespace-normal sm:whitespace-nowrap text-sm sm:text-base">
               SOY MAMÁ DANA
             </Button>
-          </div>i
+          </div>
         </div>
       </section>
       <section className="w-full bg-white">
-        <div className="w-full md:w-2/4 mx-auto flex flex-col justify-center items-center gap-4 p-6 md:py-20">
+        <div className="w-full md:w-2/3 mx-auto flex flex-col justify-center items-center gap-4 p-6 pt-10 md:py-20">
           <h2 className="text-center text-2xl text-barro">
             El desafío de la accesibilidad a servicios de salud para las
             embarazadas, madres y bebés en situaciones de emergencia.
@@ -109,7 +109,7 @@ export default function Home() {
           </div>
 
           <div className="bg-neutro w-full py-10 md:py-20 px-4">
-            <h2 className="text-center text-4xl text-barro mb-10">
+            <h2 className="text-center text-3xl md:text-4xl text-barro mb-10">
               <span className="italic font-semibold">Especialidades</span> médicas a tu disposición
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 w-full max-w-6xl mx-auto">
@@ -129,7 +129,7 @@ export default function Home() {
       <section className="w-full bg-white">
         <div className="container mx-auto py-10 md:py-20">
           <div className="w-full px-4 md:w-2/4 mx-auto flex flex-col justify-center items-center gap-4 mb-12">
-            <h2 className="text-center text-4xl text-barro">
+            <h2 className="text-center text-3xl md:text-4xl text-barro">
             <span className="italic font-semibold">Beneficios</span> de este espacio
             </h2>
             <p className="text-center font-sans">
@@ -139,7 +139,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col md:flex-row justify-center items-start gap-10 px-4">
-            <div className="w-full md:w-[300px] flex items-center justify-center gap-4 relative bg-neutro rounded-3xl p-6 z-10">
+            <div className="w-full md:w-[300px] flex items-center justify-center gap-4 relative bg-neutro rounded-3xl p-6 z-10 text-center">
               <Image
                 src="/rayos-sol-esperanza.svg"
                 alt="Flores florecer"
@@ -151,7 +151,7 @@ export default function Home() {
               Acceso inmediato a especialistas en varias áreas de la salud
               materno-infantil.
             </div>
-            <div className="w-full md:w-[300px] flex items-center justify-center gap-4 relative bg-neutro rounded-3xl p-6 z-10 md:mt-[72px]">
+            <div className="w-full md:w-[300px] flex items-center justify-center gap-4 relative bg-neutro rounded-3xl p-6 z-10 md:mt-[72px] text-center" >
               <Image
                 src="/rayos-sol-esperanza.svg"
                 alt="Flores florecer"
@@ -162,7 +162,7 @@ export default function Home() {
               />
               Comunicación directa y organizada entre mamás y profesionales.
             </div>
-            <div className="w-full md:w-[300px] flex items-center justify-center gap-4 relative bg-neutro rounded-3xl p-6 z-10">
+            <div className="w-full md:w-[300px] flex items-center justify-center gap-4 relative bg-neutro rounded-3xl p-6 z-10 text-center">
               <Image
                 src="/rayos-sol-esperanza.svg"
                 alt="Flores florecer"
@@ -192,10 +192,10 @@ export default function Home() {
 
         <div className="flex flex-col md:flex-row w-full">
           {/* Left section */}
-          <div className="w-full md:w-1/2 bg-calma p-6 md:p-20">
-            <div className="flex flex-col gap-y-6">
+          <div className="w-full md:w-1/2 bg-neutro px-6 pt-6 pb-10 md:p-20">
+            <div className="flex flex-col gap-y-4">
               {/* Logo for mobile + title */}
-              <div className="flex flex-col items-center md:items-start gap-4 mb-10">
+              <div className="flex flex-col items-center md:items-start gap-4 mb-8">
                 <Image
                   src="/como_hacer.png"
                   alt="Flores florecer"
@@ -204,29 +204,29 @@ export default function Home() {
                   className="object-contain mb-4 md:hidden"
                   priority
                 />
-                <h2 className="text-4xl text-florecer text-center md:text-left md:mt-24">
-                  Profesionales <br /> <span className="italic">sanitarios</span>
+                <h2 className="text-3xl md:text-4xl text-florecer text-center md:text-left">
+                  Profesionales <br /> <span className="italic font-semibold">sanitarios</span>
                 </h2>
               </div>
 
               <div className="flex items-center gap-x-6">
-                <div className="text-florecer text-4xl">1</div>
+                <div className="text-florecer text-3xl md:text-4xl">1</div>
                 <div className="text-florecer text-xl">
                   Ponte en contacto con nuestro <br />
                   <p className="text-refugio">chatbot en Telegram.</p>
                 </div>
               </div>
               <div className="flex items-center gap-x-6">
-                <div className="text-florecer text-4xl">2</div>
+                <div className="text-florecer text-3xl md:text-4xl">2</div>
                 <div className="text-florecer text-xl">
-                  Responde las preguntas iniciales para <br />
-                  <p className="font-semibold italic">
+                  Responde las preguntas iniciales para 
+                  <p className="font-semibold italic font-semibold">
                     registrarte como profesional.
                   </p>
                 </div>
               </div>
               <div className="flex item-center gap-x-6">
-                <div className="text-florecer text-4xl">3</div>
+                <div className="text-florecer text-3xl md:text-4xl">3</div>
                 <div className="text-florecer text-xl">
                   Serás añadido a un{" "}
                   <span className="font-semibold italic">
@@ -236,7 +236,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex item-center gap-x-6">
-                <div className="text-florecer text-4xl">4</div>
+                <div className="text-florecer text-3xl md:text-4xl">4</div>
                 <div className="text-florecer text-xl">
                   <span className="font-semibold italic">
                     ¡Empieza a ayudar!
@@ -248,22 +248,22 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 bg-florecer p-6 md:p-20">
-            <div className="flex flex-col gap-y-6">
-              <h2 className="text-4xl text-white mb-10 text-center md:text-left md:mt-24">
-              <span className="italic">Mamás</span>
+          <div className="w-full md:w-1/2 bg-florecer px-6 py-10 md:p-20">
+            <div className="flex flex-col gap-y-4">
+              <h2 className="text-3xl md:text-4xl text-white mb-8 text-center md:text-left">
+              <span className="italic font-semibold">Mamás</span>
                 <br /> DANA
               </h2>
 
               <div className="flex items-center gap-x-6 text-white">
-                <div className="text-4xl">1</div>
+                <div className="text-3xl md:text-4xl">1</div>
                 <div className="text-xl">
                   Ponte en contacto con nuestro <br />
                   <p className="text-esperanza">chatbot en Telegram.</p>
                 </div>
               </div>
               <div className="flex items-center gap-x-6 text-white">
-                <div className="text-4xl">2</div>
+                <div className="text-3xl md:text-4xl">2</div>
                 <div className="text-xl">
                   Responde a unas preguntas para <br />
                   <p className="font-semibold italic">
@@ -272,14 +272,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex item-center gap-x-6 text-white">
-                <div className="text-4xl">3</div>
+                <div className="text-3xl md:text-4xl">3</div>
                 <div className="text-xl">
                   Con la información que nos proporcionas, crearemos una
                   solicitud personalizada para el profesional adecuado.
                 </div>
               </div>
               <div className="flex item-center gap-x-6 text-white">
-                <div className="text-4xl">4</div>
+                <div className="text-3xl md:text-4xl">4</div>
                 <div className="text-xl">
                   Cada vez que se actualiza una solicitud, los profesionales
                   reciben notificaciones y pueden gestionarlas según la
@@ -300,9 +300,9 @@ export default function Home() {
         }}
       >
         <div className="flex text-white  flex-col items-center justify-center gap-4 w-2/3">
-          <h1 className="text-center text-4xl">¡No estás sola mamá!</h1>
+          <h1 className="text-center text-4xl">¡No estás sola <span className="font-semibold italic">mamá!</span></h1>
           <h2 className="text-center text-xl mb-4">
-            Aquí encontrarás tu refugio de profesionales disponibles para
+            Aquí encontrarás <span className="font-semibold italic"> tu refugio de profesionales</span> disponibles para
             brindarte su apoyo y cuidado el tiempo que lo necesites.
           </h2>
           <div className="flex justify-center gap-4">
