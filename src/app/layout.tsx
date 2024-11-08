@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Raleway } from 'next/font/google';
 import './globals.css';
 
 const termsAndConditions = [
@@ -25,8 +26,13 @@ const termsAndConditions = [
 
 export const metadata: Metadata = {
   title: 'Mamás DANA',
-  description: 'Tu refugio para volver a florecer'
+  description: 'Tu refugio para volver a florecer',
 };
+
+const raleway = Raleway({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export default function RootLayout({
   children
@@ -35,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`font-raleway-thin text-gray-900 antialiased`}>
+      <body className={ raleway.className + ` raleway-thin text-gray-900 antialiased`}>
         <div className="flex flex-col min-h-screen">
           {/*<header className="px-4 lg:px-6 h-20 flex items-center border-b border-[#F5C4C0]/20">*/}
           {/*    <Link className="flex items-center justify-center gap-2" href="/">*/}

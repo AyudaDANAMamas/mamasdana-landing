@@ -70,19 +70,19 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
               size="lg"
-              className="bg-esperanza hover:bg-esperanza rounded-full text-white whitespace-normal sm:whitespace-nowrap text-sm sm:text-base"
+              className="bg-florecer hover:bg-esperanza rounded-full text-white whitespace-normal sm:whitespace-nowrap text-sm sm:text-base"
             >
               SOY PROFESIONAL VOLUNTARIO
             </Button>
-            <Button className="bg-refugio hover:bg-refugio text-white rounded-full whitespace-normal sm:whitespace-nowrap text-sm sm:text-base">
-              Soy mamá DANA
+            <Button className="bg-refugio hover:bg-esperanza text-white rounded-full whitespace-normal sm:whitespace-nowrap text-sm sm:text-base">
+              SOY MAMÁ DANA
             </Button>
-          </div>
+          </div>i
         </div>
       </section>
       <section className="w-full bg-white">
-        <div className="w-full md:w-2/4 mx-auto flex flex-col justify-center items-center gap-4 p-4 md:py-20">
-          <h2 className="text-center text-xl text-barro">
+        <div className="w-full md:w-2/4 mx-auto flex flex-col justify-center items-center gap-4 p-6 md:py-20">
+          <h2 className="text-center text-2xl text-barro">
             El desafío de la accesibilidad a servicios de salud para las
             embarazadas, madres y bebés en situaciones de emergencia.
           </h2>
@@ -110,7 +110,7 @@ export default function Home() {
 
           <div className="bg-neutro w-full py-10 md:py-20 px-4">
             <h2 className="text-center text-4xl text-barro mb-10">
-              Especialidades médicas a tu disposición
+              <span className="italic font-semibold">Especialidades</span> médicas a tu disposición
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 w-full max-w-6xl mx-auto">
               {specialties.map((especiality) => (
@@ -130,7 +130,7 @@ export default function Home() {
         <div className="container mx-auto py-10 md:py-20">
           <div className="w-full px-4 md:w-2/4 mx-auto flex flex-col justify-center items-center gap-4 mb-12">
             <h2 className="text-center text-4xl text-barro">
-              Beneficios de este espacio
+            <span className="italic font-semibold">Beneficios</span> de este espacio
             </h2>
             <p className="text-center font-sans">
               Ponemos en contacto a mamás y bebés con especialistas en salud de
@@ -205,7 +205,7 @@ export default function Home() {
                   priority
                 />
                 <h2 className="text-4xl text-florecer text-center md:text-left md:mt-24">
-                  Profesionales <br /> sanitarios
+                  Profesionales <br /> <span className="italic">sanitarios</span>
                 </h2>
               </div>
 
@@ -251,7 +251,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 bg-florecer p-6 md:p-20">
             <div className="flex flex-col gap-y-6">
               <h2 className="text-4xl text-white mb-10 text-center md:text-left md:mt-24">
-                Mamás
+              <span className="italic">Mamás</span>
                 <br /> DANA
               </h2>
 
@@ -308,7 +308,7 @@ export default function Home() {
           <div className="flex justify-center gap-4">
             <Button
               size="lg"
-              className="bg-esperanza hover:bg-esperanza rounded-full text-white"
+              className="bg-esperanza hover:bg-refugio rounded-full text-white"
             >
               NECESITO AYUDA
             </Button>
