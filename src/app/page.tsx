@@ -1,40 +1,41 @@
 // import { redirect } from "next/navigation";
 
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { Button } from '@/components/ui/button';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   const specialties = [
     {
-      label: "Psicólogia infantil",
+      label: 'Psicólogia infantil'
     },
     {
-      label: "Matronas y Ginecología",
+      label: 'Matronas y Ginecología'
     },
     {
-      label: "Enfermería pediátrica",
+      label: 'Enfermería pediátrica'
     },
     {
-      label: "Psicología perinatal",
+      label: 'Psicología perinatal'
     },
     {
-      label: "Logopedia neonatal",
+      label: 'Logopedia neonatal'
     },
     {
-      label: "Fisioterapia pediátrica y respiratoria",
+      label: 'Fisioterapia pediátrica y respiratoria'
     },
     {
-      label: "Pediatría",
+      label: 'Pediatría'
     },
     {
-      label: "Asesoras de lactancia",
+      label: 'Asesoras de lactancia'
     },
     {
-      label: "Fisioterapia de suelo pélvico",
+      label: 'Fisioterapia de suelo pélvico'
     },
     {
-      label: "Doula",
-    },
+      label: 'Doula'
+    }
   ];
 
   return (
@@ -42,7 +43,7 @@ export default function Home() {
       <section
         className="flex items-center justify-center backdrop-brightness-50 mx-auto w-full min-h-[100vh] bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: "url('/banner-principal-flor-tierra.jpg')",
+          backgroundImage: "url('/banner-principal-flor-tierra.jpg')"
         }}
       >
         {/* Logo container - positioned at top */}
@@ -68,15 +69,19 @@ export default function Home() {
             DANA a través de consultas online gratuitas 24h.
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-florecer hover:bg-esperanza rounded-full text-white whitespace-normal sm:whitespace-nowrap text-sm sm:text-base"
-            >
-              SOY PROFESIONAL VOLUNTARIO
-            </Button>
-            <Button className="bg-refugio hover:bg-esperanza text-white rounded-full whitespace-normal sm:whitespace-nowrap text-sm sm:text-base">
-              SOY MAMÁ DANA
-            </Button>
+            <Link href="https://t.me/AyudaDANA_Mamas_Valencia_bot">
+              <Button
+                size="lg"
+                className="bg-florecer hover:bg-esperanza rounded-full text-white whitespace-normal sm:whitespace-nowrap text-sm sm:text-base"
+              >
+                SOY PROFESIONAL VOLUNTARIO
+              </Button>
+            </Link>
+            <Link href="https://t.me/AyudaDANA_Mamas_Valencia_bot">
+              <Button className="bg-refugio hover:bg-esperanza text-white rounded-full whitespace-normal sm:whitespace-nowrap text-sm sm:text-base">
+                SOY MAMÁ DANA
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -110,10 +115,11 @@ export default function Home() {
 
           <div className="bg-neutro w-full py-10 md:py-20 px-4">
             <h2 className="text-center text-3xl md:text-4xl text-barro mb-10">
-              <span className="italic font-semibold">Especialidades</span> médicas a tu disposición
+              <span className="italic font-semibold">Especialidades</span>{' '}
+              médicas a tu disposición
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 w-full max-w-6xl mx-auto">
-              {specialties.map((especiality) => (
+              {specialties.map(especiality => (
                 <div
                   key={especiality.label}
                   className="bg-calma hover:bg-calma rounded-full text-black p-3 flex justify-center items-center text-center"
@@ -130,7 +136,8 @@ export default function Home() {
         <div className="container mx-auto py-10 md:py-20">
           <div className="w-full px-4 md:w-2/4 mx-auto flex flex-col justify-center items-center gap-4 mb-12">
             <h2 className="text-center text-3xl md:text-4xl text-barro">
-            <span className="italic font-semibold">Beneficios</span> de este espacio
+              <span className="italic font-semibold">Beneficios</span> de este
+              espacio
             </h2>
             <p className="text-center font-sans">
               Ponemos en contacto a mamás y bebés con especialistas en salud de
@@ -151,7 +158,7 @@ export default function Home() {
               Acceso inmediato a especialistas en varias áreas de la salud
               materno-infantil.
             </div>
-            <div className="w-full md:w-[300px] flex items-center justify-center gap-4 relative bg-neutro rounded-3xl p-6 z-10 md:mt-[72px] text-center" >
+            <div className="w-full md:w-[300px] flex items-center justify-center gap-4 relative bg-neutro rounded-3xl p-6 z-10 md:mt-[72px] text-center">
               <Image
                 src="/rayos-sol-esperanza.svg"
                 alt="Flores florecer"
@@ -205,7 +212,8 @@ export default function Home() {
                   priority
                 />
                 <h2 className="text-3xl md:text-4xl text-florecer text-center md:text-left">
-                  Profesionales <br /> <span className="italic font-semibold">sanitarios</span>
+                  Profesionales <br />{' '}
+                  <span className="italic font-semibold">sanitarios</span>
                 </h2>
               </div>
 
@@ -219,7 +227,7 @@ export default function Home() {
               <div className="flex items-center gap-x-6">
                 <div className="text-florecer text-3xl md:text-4xl">2</div>
                 <div className="text-florecer text-xl">
-                  Responde las preguntas iniciales para 
+                  Responde las preguntas iniciales para
                   <p className="font-semibold italic font-semibold">
                     registrarte como profesional.
                   </p>
@@ -228,10 +236,10 @@ export default function Home() {
               <div className="flex item-center gap-x-6">
                 <div className="text-florecer text-3xl md:text-4xl">3</div>
                 <div className="text-florecer text-xl">
-                  Serás añadido a un{" "}
+                  Serás añadido a un{' '}
                   <span className="font-semibold italic">
                     canal de Telegram
-                  </span>{" "}
+                  </span>{' '}
                   donde encontrarás un chat para cada especialidad.
                 </div>
               </div>
@@ -240,7 +248,7 @@ export default function Home() {
                 <div className="text-florecer text-xl">
                   <span className="font-semibold italic">
                     ¡Empieza a ayudar!
-                  </span>{" "}
+                  </span>{' '}
                   Gestiona tus solicitudes de manera autónoma, aceptando y
                   respondiendo a las mamás en tiempo real
                 </div>
@@ -251,7 +259,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 bg-florecer px-6 py-10 md:p-20">
             <div className="flex flex-col gap-y-4">
               <h2 className="text-3xl md:text-4xl text-white mb-8 text-center md:text-left">
-              <span className="italic font-semibold">Mamás</span>
+                <span className="italic font-semibold">Mamás</span>
                 <br /> DANA
               </h2>
 
@@ -293,25 +301,34 @@ export default function Home() {
       <section
         className="flex items-center justify-center backdrop-brightness-50 mx-auto"
         style={{
-          minHeight: "100vh",
+          minHeight: '100vh',
           backgroundImage: "url('/mama_banner.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
         }}
       >
         <div className="flex text-white  flex-col items-center justify-center gap-4 w-2/3">
-          <h1 className="text-center text-4xl">¡No estás sola <span className="font-semibold italic">mamá!</span></h1>
+          <h1 className="text-center text-4xl">
+            ¡No estás sola <span className="font-semibold italic">mamá!</span>
+          </h1>
           <h2 className="text-center text-xl mb-4">
-            Aquí encontrarás <span className="font-semibold italic"> tu refugio de profesionales</span> disponibles para
-            brindarte su apoyo y cuidado el tiempo que lo necesites.
+            Aquí encontrarás{' '}
+            <span className="font-semibold italic">
+              {' '}
+              tu refugio de profesionales
+            </span>{' '}
+            disponibles para brindarte su apoyo y cuidado el tiempo que lo
+            necesites.
           </h2>
           <div className="flex justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-esperanza hover:bg-refugio rounded-full text-white"
-            >
-              NECESITO AYUDA
-            </Button>
+            <Link href="https://t.me/AyudaDANA_Mamas_Valencia_bot">
+              <Button
+                size="lg"
+                className="bg-esperanza hover:bg-refugio rounded-full text-white"
+              >
+                NECESITO AYUDA
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
